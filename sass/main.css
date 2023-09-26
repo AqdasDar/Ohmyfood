@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 89px 13px 89px;
+  width: 375px;
+  height: 63px;
+}
+header .logo .logo__img {
+  width: 162px;
+  height: 36px;
+}
+
+/*# sourceMappingURL=main.css.map */
