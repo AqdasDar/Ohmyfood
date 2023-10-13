@@ -5,8 +5,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Ohmyfood</title>
     <link href="sass/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/a38fb37305.js"></script>
 </head>
@@ -52,40 +52,56 @@
     </ol>
 </section>
 <!-- Section 3 -->
-<section class="section3">
-    <h2 class="title">Restaurant</h2>
-    <div class="section3_card">
-        <img alt="restaurant" class="section3_img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-        <div class="section3_text">
-            <h3 class="section3_text1">La palette du goût</h3>
-            <p class="section3_text2">Ménilmontant</p>
-        </div>
-    </div>
-    <div class="section3_card">
-        <img alt="restaurant" class="section3_img" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-        <div class="section3_text">
-            <h3 class="section3_text1">La note enchantée</h3>
-            <p class="section3_text2">Charonne</p>
-        </div>
-    </div>
-    <div class="section3_card">
-        <img alt="restaurant" class="section3_img" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-        <div class="section3_text">
-            <h3 class="section3_text1">À la française</h3>
-            <p class="section3_text2">Cité Rouge</p>
-        </div>
-    </div>
-    <div class="section3_card">
-        <img alt="restaurant" class="section3_img"
-             src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-        <div class="section3_text">
-            <h3 class="section3_text1">Le délice des sens</h3>
-            <p class="section3_text2">Folie-Méricourt</p>
-        </div>
-    </div>
+<div class="resto">
+    <span class="heading">Restaurants</span>
+    <div class="list">
+        <a href="resto1.html" class="resto_card">
+            <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="resto_img" alt="#">
+            <h1 class="green_button">Nouveau</h1>
 
+            <div class="card_body">
+                <div class="card_text"><span>La palette du gout</span>
+                    <p>Ménilmontant</p>
+                </div>
+                <div class="heart"><i class="fa-regular fa-2x fa-heart"></i>
+                </div>
+            </div>
+        </a>
+        <a href="resto2.html" class="resto_card">
+            <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="resto_img" alt="#">
+            <h1 class="green_button">Nouveau</h1>
 
-</section>
+            <div class="card_body">
+                <div class="card_text"><span>La note enchantée</span>
+                    <p>Charonne</p>
+                </div>
+                <div class="heart"><i class="fa-regular fa-2x fa-heart"></i>
+                </div>
+            </div>
+        </a>
+        <a href="resto3.html" class="resto_card">
+            <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="resto_img" alt="#">
+            <div class="card_body">
+                <div class="card_text"><span>A la française</span>
+                    <p>Cité rouge</p>
+                </div>
+                <div class="heart"><i class="fa-regular fa-2x fa-heart"></i>
+                </div>
+            </div>
+        </a>
+        <a href="resto4.html" class="resto_card">
+            <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="#"
+                 class="resto_img">
+            <div class="card_body">
+                <div class="card_text"><span>Le délice des sens</span>
+                    <p>Folie-Méricourt</p>
+                </div>
+                <div class="heart"><i class="fa-regular fa-2x fa-heart"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
 <!-- Footer -->
 <footer class="footer">
     <div class="footer_text">
@@ -101,5 +117,7 @@
         <p class="footer_text2">Mentions légales</p>
         <p class="footer_text2">Contact</p>
     </div>
+</footer>
+
 </body>
 </html>
