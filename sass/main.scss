@@ -2,10 +2,15 @@
 @import "buttons";
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 body {
   margin: 0;
   padding: 0;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -38,7 +43,8 @@ a {
     justify-content: center;
     display: flex;
     text-align: center;
-    font-family: Shrikhand, sans-serif;
+    text-align: center;
+    font-family: Shrikhand, sans-serif !important;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
