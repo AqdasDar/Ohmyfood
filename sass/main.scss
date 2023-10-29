@@ -35,24 +35,38 @@ a {
   color: black;
 }
 
+.top_back {
+  margin: 0 42px 0 17px
+}
+.top_accueil {
+  width: 50%;
+}
+
 .logo {
   padding: 14px 89px 13px 89px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 
-  .logo_text {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    text-align: center;
-    font-family: Shrikhand, sans-serif !important;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: $black;
-    margin: 0;
+}
 
-  }
+.logo_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_text {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  font-family: Shrikhand, sans-serif !important;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
+  margin: 0;
+
 }
 
 .input {
@@ -124,17 +138,16 @@ a {
 .button {
   @include button;
 
-  .button1 {
+  .button1 { color: white;
     @include button_content;
   }
 }
 
 .title {
   @include title;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px 20px;
   padding-top: 54px;
 }
-
 .section2_ol {
   margin: 0;
   padding: 0 0 43px;
@@ -169,6 +182,11 @@ a {
   margin: 0 20px 0 0;
 }
 
+.section3 {
+  padding: 0 0 60px 0;
+  background-color: $grey3;
+}
+
 .resto, .list {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +213,22 @@ a {
   width: 90%;
   position: relative;
   overflow: hidden;
+}
+.card_text span {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card_text p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .resto_img {
@@ -242,6 +276,12 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+    margin-bottom: 16px;
+}
+.footer_text{
+  display: flex;
+    flex-direction: column;
+  gap: 7px;
 }
 
 .footer_text1 {
@@ -283,24 +323,35 @@ footer {
   right: .75rem;
 }
 
+.top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 14px;
+  margin-bottom: 13px;
+}
+
 .top_1 {
   width: 100%;
   background-size: cover;
   height: 250px;
   background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
+
 .top_2 {
   width: 100%;
   background-size: cover;
   height: 250px;
   background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
+
 .top_3 {
   width: 100%;
   background-size: cover;
   height: 250px;
   background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
+
 .top_4 {
   width: 100%;
   background-size: cover;
@@ -311,7 +362,6 @@ footer {
 .menu {
   display: flex;
   flex-direction: column;
-  height: 1200px;
   border-radius: 35px 35px 0px 0px;
   margin-top: -35px;
   padding: 0px 20px;
@@ -350,26 +400,31 @@ footer {
   align-items: flex-end;
   width: 480px;
   flex-shrink: 0.9;
-}.plat .box {
-   background-color: #99E2D0;
-   display: flex;
-   justify-content: flex-end;
-   width: 70px;
-   height: 71px;
-   margin-top: -15px;
-   margin-bottom: -15px;
-   margin-right: -17px;
-   border-radius: 0px 15px 15px 0px;
-   transform-origin: right;
-   transform: scaleX(0);
-   transition: transform 600ms;
- }
+}
+
+.plat .box {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: flex-end;
+  width: 70px;
+  height: 71px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-right: -17px;
+  border-radius: 0px 15px 15px 0px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 600ms;
+}
+
 .menu .bottom {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
 }
+
 .btn-pink {
   background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   color: rgb(255, 255, 255);
@@ -381,6 +436,7 @@ footer {
   position: relative;
   z-index: 1;
 }
+
 .heading_menu {
   border-bottom: solid 3px #99E2D0;
   font-size: 16px;
@@ -389,6 +445,7 @@ footer {
   margin-bottom: 15px;
   width: 40px;
 }
+
 .name1 {
   overflow: hidden;
   color: #000;
@@ -400,7 +457,8 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
-.name2{
+
+.name2 {
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
@@ -411,13 +469,15 @@ footer {
   font-weight: 300;
   line-height: normal;
 }
-.menu_row{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+.menu_row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding-bottom: 40px;
 }
-.price{
+
+.price {
   color: #353535;
   text-align: center;
   font-family: Roboto;
@@ -425,7 +485,4 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-.part{
-  padding-bottom: 40px;
 }
