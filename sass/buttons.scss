@@ -18,3 +18,84 @@
   justify-content: center;
   align-items: center;
 }
+$iconSize: 2rem; // Taille de l'icône
+
+.heart {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  width: $iconSize;
+  height: $iconSize;
+
+  .heart-icon {
+    width: $iconSize;
+    height: $iconSize;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+
+    &.full {
+      opacity: 0; // Cœur plein est invisible par défaut
+    }
+
+    &.empty {
+      opacity: 1; // Cœur vide est visible par défaut
+    }
+  }
+
+  &:hover .heart-icon.full {
+    opacity: 1; // Afficher le cœur plein au survol
+  }
+
+  &:hover .heart-icon.empty {
+    opacity: 0; // Cacher le cœur vide au survol
+  }
+}
+/* Animation pour les plats d'entrée */
+.entrees {
+  opacity: 0;
+  animation: appear 0.5s ease forwards;
+}
+
+/* Animation pour les plats principaux */
+.plats {
+  opacity: 0;
+  animation: appear 0.5s ease 0.2s forwards;
+}
+
+/* Animation pour les desserts */
+.desserts {
+  opacity: 0;
+  animation: appear 0.5s ease 0.4s forwards;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.box-container {
+  width: 15%; /* Largeur de la div .box-container */
+  height: 100%; /* Hauteur de la carte parent */
+  overflow: hidden;
+}
+
+.box {
+  background-color: #44c767;
+  text-align: center;
+  color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.plat:hover .box-container {
+  width: 15%; /* Lors du survol, la div .box-container prendra 15% de la largeur */
+}

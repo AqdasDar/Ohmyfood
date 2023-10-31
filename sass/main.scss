@@ -138,6 +138,11 @@ a {
 .button {
   @include button;
 
+  &:hover {
+    background: linear-gradient(193deg, #b76ee7 -11.44%, #ff9ec6 123.93%);
+    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.35);
+  }
+
   .button1 { color: white;
     @include button_content;
   }
@@ -392,29 +397,31 @@ footer {
   border-radius: 15px;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
   overflow: hidden;
+  position: relative;
 }
 
 .food {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 480px;
-  flex-shrink: 0.9;
+  width: 100%;
 }
 
-.plat .box {
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: flex-end;
-  width: 70px;
-  height: 71px;
-  margin-top: -15px;
-  margin-bottom: -15px;
-  margin-right: -17px;
-  border-radius: 0px 15px 15px 0px;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 600ms;
+.box-container {
+  width: 0%; /* Largeur de la div .box-container */
+  height: 100%; /* Hauteur de la carte parent */
+  overflow: hidden;
+}
+.box {
+  background-color: #44c767;
+  text-align: center;
+  color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.plat:hover .box-container {
+  width: 15%; /* Lors du survol, la div .box-container prendra 15% de la largeur */
+  transition: width 0.5s ease-in-out;
 }
 
 .menu .bottom {
