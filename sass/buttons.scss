@@ -75,27 +75,3 @@ $iconSize: 2rem; // Taille de l'icône
     opacity: 1;
   }
 }
-
-.food {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-}
-
-.box-container {
-  width: 15%; /* Largeur de la div .box-container */
-  height: 100%; /* Hauteur de la carte parent */
-  overflow: hidden;
-}
-
-.box {
-  background-color: #44c767;
-  text-align: center;
-  color: white;
-  transition: width 0.5s ease-in-out;
-}
-
-.plat:hover .box-container {
-  width: 15%; /* Lors du survol, la div .box-container prendra 15% de la largeur */
-}

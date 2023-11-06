@@ -310,7 +310,9 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
-
+.white {
+  color: white;
+}
 .footer_flex {
   display: flex;
   gap: 10px;
@@ -412,7 +414,11 @@ footer {
   padding: 15px;
 }
 
-
+.food_1 {
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le texte qui dépasse */
+  text-overflow: ellipsis; /* Affiche "..." lorsque le texte est tronqué */
+}
 
 .box-container {
   width: 0%; /* Largeur de la div .box-container */
@@ -435,6 +441,12 @@ footer {
   width: 59px; /* Lors du survol, la div .box-container prendra 15% de la largeur */
   transition: width 0.5s ease-in-out;
 }
+
+.plat:hover .food {
+  width: 85%;
+  transition: width 0.5s ease-in-out;
+}
+
 
 .menu .bottom {
   display: flex;
@@ -504,4 +516,59 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+// ecran desktop
+@media screen and (min-width: 1024px) {
+//2 item par ligne
+  .resto_card {
+    width: 45%;
+  }
+  .section2_ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section2{
+    padding: 0 180px;
+  }
+  .section3 {
+    padding: 0 180px;
+  }
+  .list{
+    gap: 50px;
+  }
+  .menu{
+    padding: 0 180px;
+    margin: -35px 10%;
+  }
+}
+.loader{
+  width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-top-color: #000;
+    animation: loader 2s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+  @keyframes loader {
+    0% {
+      width: 100vw;
+      height: 100vh;
+        opacity: 1;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+
+    
+  }
 }
