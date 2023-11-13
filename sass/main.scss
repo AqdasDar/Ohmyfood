@@ -59,7 +59,6 @@ a {
   justify-content: center;
   display: flex;
   text-align: center;
-  text-align: center;
   font-family: Shrikhand, sans-serif !important;
   font-size: 30px;
   font-style: normal;
@@ -141,7 +140,7 @@ a {
 
   &:hover {
     background: linear-gradient(193deg, #b76ee7 -11.44%, #ff9ec6 123.93%);
-    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.35);
   }
 
   .button1 {
@@ -225,7 +224,7 @@ a {
 
 .card_text span {
   color: #000;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -234,7 +233,7 @@ a {
 
 .card_text p {
   color: #000;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -377,9 +376,9 @@ footer {
 .menu {
   display: flex;
   flex-direction: column;
-  border-radius: 35px 35px 0px 0px;
+  border-radius: 35px 35px 0 0;
   margin-top: -35px;
-  padding: 0px 20px;
+  padding: 0 20px;
   background-color: #f6f6f6;
 }
 
@@ -387,7 +386,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 0px;
+  padding: 25px 0;
   align-items: center;
 }
 
@@ -423,7 +422,7 @@ footer {
 }
 
 .box-container {
-  width: 0%; /* Largeur de la div .box-container */
+  width: 0; /* Largeur de la div .box-container */
   height: 100%; /* Hauteur de la carte parent */
   overflow: hidden;
 }
@@ -436,7 +435,7 @@ footer {
   display: flex;
   color: white;
   transition: width 0.5s ease-in-out;
-  width: 0%;
+  width: 0;
 }
 
 .plat:hover .box {
@@ -484,7 +483,7 @@ footer {
   color: #000;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -513,14 +512,14 @@ footer {
 .price {
   color: #353535;
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 15.043px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-// ecran desktop
+// écran desktop
 @media screen and (min-width: 1024px) {
   //2 item par ligne
   .resto_card {
