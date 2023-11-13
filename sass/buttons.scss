@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
 }
+
 $iconSize: 2rem; // Taille de l'icône
 
 .heart {
@@ -52,6 +53,7 @@ $iconSize: 2rem; // Taille de l'icône
     opacity: 0; // Cacher le cœur vide au survol
   }
 }
+
 /* Animation pour les plats d'entrée */
 .entrees {
   opacity: 0;
