@@ -598,8 +598,8 @@ footer {
 }
 
 .loader__bar-inner {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   background-color: #9356DC;
   animation: rotateLoader 2s  ease-in ;
   transform-origin: center center; /* Assure que la rotation se fait autour du centre de la barre */
